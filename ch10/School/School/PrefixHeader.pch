@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  School
+//
+//  Created by tonymacmini on 15/2/2.
+//  Copyright (c) 2015年 EOrient. All rights reserved.
+//
+
+#ifndef School_PrefixHeader_pch
+#define School_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif

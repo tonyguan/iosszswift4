@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z3O-Gu-vyf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Y2L-k2-oSP">
+            <objects>
+                <viewController id="Z3O-Gu-vyf" customClass="ViewController" customModule="AVFoundationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FXB-h3-HDV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttP-r2-b1u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ppx-08-lLn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpz-EH-1H6">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="PXz-lM-hXo">
+                                        <connections>
+                                            <action selector="play:" destination="Z3O-Gu-vyf" id="tOr-8j-kRW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="vgP-Ja-PG2">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="6fD-3p-wBI">
+                                            <rect key="frame" x="42" y="8" width="514" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="seek:" destination="Z3O-Gu-vyf" eventType="valueChanged" id="ald-6d-O3e"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ttP-r2-b1u" firstAttribute="top" secondItem="jpz-EH-1H6" secondAttribute="bottom" id="LlV-24-Iz1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jpz-EH-1H6" secondAttribute="trailing" constant="-16" id="RB7-Kn-JkJ"/>
+                            <constraint firstItem="jpz-EH-1H6" firstAttribute="leading" secondItem="Ppx-08-lLn" secondAttribute="leadingMargin" constant="-16" id="pzg-lH-z8E"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RB7-Kn-JkJ"/>
+                                <exclude reference="pzg-lH-z8E"/>
+                                <exclude reference="LlV-24-Iz1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="RB7-Kn-JkJ"/>
+                                <include reference="pzg-lH-z8E"/>
+                                <include reference="LlV-24-Iz1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="slider" destination="6fD-3p-wBI" id="KdK-3Q-H4a"/>
+                        <outlet property="toolBar" destination="jpz-EH-1H6" id="R4p-O2-d17"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47t-n7-rlz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="402"/>
+        </scene>
+    </scenes>
+</document>

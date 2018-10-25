@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xwx-34-dj5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ePL-db-Dff">
+            <objects>
+                <viewController id="Xwx-34-dj5" customClass="ViewController" customModule="VideoRecord_AVFoundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UaN-ac-pr4"/>
+                        <viewControllerLayoutGuide type="bottom" id="LR7-79-Bd8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7gX-2M-9qI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-r3-q1l">
+                                <rect key="frame" x="14" y="546" width="583" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="录制">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordPressed:" destination="Xwx-34-dj5" eventType="touchUpInside" id="xf6-b6-tYv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="停止" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJC-e0-bfp">
+                                <rect key="frame" x="107" y="23" width="110" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0059685909790000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="1" blue="0.0059685909790000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lRJ-r3-q1l" secondAttribute="centerX" id="JuL-KP-jj5">
+                                <variation key="widthClass=compact" constant="-1"/>
+                            </constraint>
+                            <constraint firstItem="cJC-e0-bfp" firstAttribute="centerX" secondItem="7gX-2M-9qI" secondAttribute="centerX" id="j6Z-LP-ybo"/>
+                            <constraint firstItem="cJC-e0-bfp" firstAttribute="leading" secondItem="7gX-2M-9qI" secondAttribute="leadingMargin" constant="41" id="knD-tD-MfH"/>
+                            <constraint firstItem="cJC-e0-bfp" firstAttribute="top" secondItem="UaN-ac-pr4" secondAttribute="bottom" constant="19" id="rge-qf-HoE"/>
+                            <constraint firstItem="LR7-79-Bd8" firstAttribute="top" secondItem="lRJ-r3-q1l" secondAttribute="bottom" constant="45" id="yna-DG-na6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="j6Z-LP-ybo"/>
+                                <exclude reference="knD-tD-MfH"/>
+                                <exclude reference="rge-qf-HoE"/>
+                                <exclude reference="JuL-KP-jj5"/>
+                                <exclude reference="yna-DG-na6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="j6Z-LP-ybo"/>
+                                <include reference="knD-tD-MfH"/>
+                                <include reference="rge-qf-HoE"/>
+                                <include reference="JuL-KP-jj5"/>
+                                <include reference="yna-DG-na6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="lRJ-r3-q1l" id="3MZ-VY-uuk"/>
+                        <outlet property="label" destination="cJC-e0-bfp" id="kMT-3j-LuX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3v2-xu-ezH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430.5" y="376"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA2CAB8C1AE37BD300900ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2CAB8B1AE37BD300900ACA /* AppDelegate.swift */; };
+		EA2CAB911AE37BD300900ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2CAB901AE37BD300900ACA /* ViewController.swift */; };
+		EA2CAB941AE37BD300900ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2CAB921AE37BD300900ACA /* Main.storyboard */; };
+		EA2CAB961AE37BD300900ACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2CAB951AE37BD300900ACA /* Images.xcassets */; };
+		EA2CAB991AE37BD300900ACA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2CAB971AE37BD300900ACA /* LaunchScreen.xib */; };
+		EA2CABA51AE37BD300900ACA /* Keyframe_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2CABA41AE37BD300900ACA /* Keyframe_AnimationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA2CAB9F1AE37BD300900ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2CAB7E1AE37BD300900ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2CAB851AE37BD300900ACA;
+			remoteInfo = "Keyframe Animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA2CAB861AE37BD300900ACA /* Keyframe Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keyframe Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2CAB8A1AE37BD300900ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2CAB8B1AE37BD300900ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA2CAB901AE37BD300900ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA2CAB931AE37BD300900ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA2CAB951AE37BD300900ACA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA2CAB981AE37BD300900ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EA2CAB9E1AE37BD300900ACA /* Keyframe AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keyframe AnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2CABA31AE37BD300900ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2CABA41AE37BD300900ACA /* Keyframe_AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyframe_AnimationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA2CAB831AE37BD300900ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2CAB9B1AE37BD300900ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2CAB7D1AE37BD300900ACA = {
+			isa = PBXGroup;
+			children = (
+				EA2CAB881AE37BD300900ACA /* Keyframe Animation */,
+				EA2CABA11AE37BD300900ACA /* Keyframe AnimationTests */,
+				EA2CAB871AE37BD300900ACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA2CAB871AE37BD300900ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA2CAB861AE37BD300900ACA /* Keyframe Animation.app */,
+				EA2CAB9E1AE37BD300900ACA /* Keyframe AnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA2CAB881AE37BD300900ACA /* Keyframe Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EA2CAB8B1AE37BD300900ACA /* AppDelegate.swift */,
+				EA2CAB901AE37BD300900ACA /* ViewController.swift */,
+				EA2CAB921AE37BD300900ACA /* Main.storyboard */,
+				EA2CAB951AE37BD300900ACA /* Images.xcassets */,
+				EA2CAB971AE37BD300900ACA /* LaunchScreen.xib */,
+				EA2CAB891AE37BD300900ACA /* Supporting Files */,
+			);
+			path = "Keyframe Animation";
+			sourceTree = "<group>";
+		};
+		EA2CAB891AE37BD300900ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA2CAB8A1AE37BD300900ACA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA2CABA11AE37BD300900ACA /* Keyframe AnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2CABA41AE37BD300900ACA /* Keyframe_AnimationTests.swift */,
+				EA2CABA21AE37BD300900ACA /* Supporting Files */,
+			);
+			path = "Keyframe AnimationTests";
+			sourceTree = "<group>";
+		};
+		EA2CABA21AE37BD300900ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA2CABA31AE37BD300900ACA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2CAB851AE37BD300900ACA /* Keyframe Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2CABA81AE37BD300900ACA /* Build configuration list for PBXNativeTarget "Keyframe Animation" */;
+			buildPhases = (
+				EA2CAB821AE37BD300900ACA /* Sources */,
+				EA2CAB831AE37BD300900ACA /* Frameworks */,
+				EA2CAB841AE37BD300900ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Keyframe Animation";
+			productName = "Keyframe Animation";
+			productReference = EA2CAB861AE37BD300900ACA /* Keyframe Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA2CAB9D1AE37BD300900ACA /* Keyframe AnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2CABAB1AE37BD300900ACA /* Build configuration list for PBXNativeTarget "Keyframe AnimationTests" */;
+			buildPhases = (
+				EA2CAB9A1AE37BD300900ACA /* Sources */,
+				EA2CAB9B1AE37BD300900ACA /* Frameworks */,
+				EA2CAB9C1AE37BD300900ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2CABA01AE37BD300900ACA /* PBXTargetDependency */,
+			);
+			name = "Keyframe AnimationTests";
+			productName = "Keyframe AnimationTests";
+			productReference = EA2CAB9E1AE37BD300900ACA /* Keyframe AnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA2CAB7E1AE37BD300900ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tony;
+				TargetAttributes = {
+					EA2CAB851AE37BD300900ACA = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EA2CAB9D1AE37BD300900ACA = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EA2CAB851AE37BD300900ACA;
+					};
+				};
+			};
+			buildConfigurationList = EA2CAB811AE37BD300900ACA /* Build configuration list for PBXProject "Keyframe Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA2CAB7D1AE37BD300900ACA;
+			productRefGroup = EA2CAB871AE37BD300900ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA2CAB851AE37BD300900ACA /* Keyframe Animation */,
+				EA2CAB9D1AE37BD300900ACA /* Keyframe AnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA2CAB841AE37BD300900ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2CAB941AE37BD300900ACA /* Main.storyboard in Resources */,
+				EA2CAB991AE37BD300900ACA /* LaunchScreen.xib in Resources */,
+				EA2CAB961AE37BD300900ACA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2CAB9C1AE37BD300900ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA2CAB821AE37BD300900ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2CAB911AE37BD300900ACA /* ViewController.swift in Sources */,
+				EA2CAB8C1AE37BD300900ACA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2CAB9A1AE37BD300900ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2CABA51AE37BD300900ACA /* Keyframe_AnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA2CABA01AE37BD300900ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2CAB851AE37BD300900ACA /* Keyframe Animation */;
+			targetProxy = EA2CAB9F1AE37BD300900ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA2CAB921AE37BD300900ACA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2CAB931AE37BD300900ACA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA2CAB971AE37BD300900ACA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2CAB981AE37BD300900ACA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA2CABA61AE37BD300900ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA2CABA71AE37BD300900ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA2CABA91AE37BD300900ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Keyframe Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA2CABAA1AE37BD300900ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Keyframe Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA2CABAC1AE37BD300900ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Keyframe AnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keyframe Animation.app/Keyframe Animation";
+			};
+			name = Debug;
+		};
+		EA2CABAD1AE37BD300900ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Keyframe AnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keyframe Animation.app/Keyframe Animation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA2CAB811AE37BD300900ACA /* Build configuration list for PBXProject "Keyframe Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2CABA61AE37BD300900ACA /* Debug */,
+				EA2CABA71AE37BD300900ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2CABA81AE37BD300900ACA /* Build configuration list for PBXNativeTarget "Keyframe Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2CABA91AE37BD300900ACA /* Debug */,
+				EA2CABAA1AE37BD300900ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2CABAB1AE37BD300900ACA /* Build configuration list for PBXNativeTarget "Keyframe AnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2CABAC1AE37BD300900ACA /* Debug */,
+				EA2CABAD1AE37BD300900ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA2CAB7E1AE37BD300900ACA /* Project object */;
+}

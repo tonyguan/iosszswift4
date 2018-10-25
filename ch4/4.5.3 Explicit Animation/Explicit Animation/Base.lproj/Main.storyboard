@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nkR-mu-rrT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="SHk-yn-GMF">
+            <objects>
+                <viewController id="nkR-mu-rrT" customClass="ViewController" customModule="Explicit_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tlp-Tl-4r6"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4x-OJ-Y8Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1sz-lC-Fgx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" image="clipartPlane" translatesAutoresizingMaskIntoConstraints="NO" id="1Hz-Ub-jP6">
+                                <rect key="frame" x="17" y="43" width="110" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="p7D-DA-lxi"/>
+                                    <constraint firstAttribute="height" constant="68" id="xTr-gz-MZO"/>
+                                    <constraint firstAttribute="width" constant="110" id="zV8-z1-OUG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="p7D-DA-lxi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="p7D-DA-lxi"/>
+                                        <exclude reference="xTr-gz-MZO"/>
+                                        <exclude reference="zV8-z1-OUG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J2-4h-qAg">
+                                <rect key="frame" x="115" y="489" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7j0-Dm-Nhu"/>
+                                    <constraint firstAttribute="height" constant="40" id="MT3-a0-qa1"/>
+                                    <constraint firstAttribute="width" constant="100" id="prC-DG-Sju"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="ButtonSelected"/>
+                                <state key="highlighted" image="ButtonSelected"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7j0-Dm-Nhu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7j0-Dm-Nhu"/>
+                                        <exclude reference="MT3-a0-qa1"/>
+                                        <exclude reference="prC-DG-Sju"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="movePlane:" destination="nkR-mu-rrT" eventType="touchUpInside" id="8Hu-jd-6Kh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Hz-Ub-jP6" firstAttribute="leading" secondItem="1sz-lC-Fgx" secondAttribute="leadingMargin" constant="1" id="5mF-i4-Wis"/>
+                            <constraint firstItem="1J2-4h-qAg" firstAttribute="leading" secondItem="1sz-lC-Fgx" secondAttribute="leading" constant="115" id="7dQ-nJ-Xe7"/>
+                            <constraint firstItem="1Hz-Ub-jP6" firstAttribute="leading" secondItem="1sz-lC-Fgx" secondAttribute="leading" constant="17" id="DiA-Oe-cT5"/>
+                            <constraint firstItem="1Hz-Ub-jP6" firstAttribute="top" secondItem="tlp-Tl-4r6" secondAttribute="bottom" constant="23" id="McD-6Z-40t"/>
+                            <constraint firstItem="b4x-OJ-Y8Q" firstAttribute="top" secondItem="1J2-4h-qAg" secondAttribute="bottom" constant="71" id="QXj-tF-qmB"/>
+                            <constraint firstItem="1J2-4h-qAg" firstAttribute="centerX" secondItem="1sz-lC-Fgx" secondAttribute="centerX" id="TNv-m6-nXw"/>
+                            <constraint firstItem="1J2-4h-qAg" firstAttribute="top" secondItem="tlp-Tl-4r6" secondAttribute="bottom" constant="451" id="c55-2C-Zs6"/>
+                            <constraint firstItem="1Hz-Ub-jP6" firstAttribute="top" secondItem="tlp-Tl-4r6" secondAttribute="bottom" constant="23" id="ey1-cR-s6x"/>
+                            <constraint firstItem="b4x-OJ-Y8Q" firstAttribute="top" secondItem="1J2-4h-qAg" secondAttribute="bottom" constant="89" id="pB2-7r-2oh"/>
+                            <constraint firstItem="b4x-OJ-Y8Q" firstAttribute="top" secondItem="1Hz-Ub-jP6" secondAttribute="bottom" constant="489" id="r8I-4Y-F4f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5mF-i4-Wis"/>
+                                <exclude reference="McD-6Z-40t"/>
+                                <exclude reference="TNv-m6-nXw"/>
+                                <exclude reference="c55-2C-Zs6"/>
+                                <exclude reference="pB2-7r-2oh"/>
+                                <exclude reference="r8I-4Y-F4f"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5mF-i4-Wis"/>
+                                <exclude reference="DiA-Oe-cT5"/>
+                                <include reference="McD-6Z-40t"/>
+                                <exclude reference="ey1-cR-s6x"/>
+                                <exclude reference="7dQ-nJ-Xe7"/>
+                                <include reference="TNv-m6-nXw"/>
+                                <include reference="c55-2C-Zs6"/>
+                                <exclude reference="QXj-tF-qmB"/>
+                                <include reference="pB2-7r-2oh"/>
+                                <include reference="r8I-4Y-F4f"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="plane" destination="1Hz-Ub-jP6" id="6Z7-5p-9rD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQu-Sx-ph4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="150" height="46"/>
+        <image name="ButtonSelected" width="150" height="46"/>
+        <image name="clipartPlane" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AnimationBlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rxc-95-nTE"/>
+                        <viewControllerLayoutGuide type="bottom" id="qk4-jT-rby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Ball" translatesAutoresizingMaskIntoConstraints="NO" id="c2w-Wm-cTx">
+                                <rect key="frame" x="140" y="90" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Qnb-YJ-JfQ"/>
+                                    <constraint firstAttribute="width" constant="42" id="sXV-Sw-r08"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qnb-YJ-JfQ"/>
+                                        <exclude reference="sXV-Sw-r08"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Qnb-YJ-JfQ"/>
+                                        <include reference="sXV-Sw-r08"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nav-l8-2Br">
+                                <rect key="frame" x="95" y="308" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="WYa-zw-x7N"/>
+                                    <constraint firstAttribute="height" constant="50" id="naK-93-2Tb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="ButtonSelected"/>
+                                <state key="highlighted" image="ButtonSelected"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WYa-zw-x7N"/>
+                                        <exclude reference="naK-93-2Tb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WYa-zw-x7N"/>
+                                        <include reference="naK-93-2Tb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="adY-Og-YSC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qk4-jT-rby" firstAttribute="top" secondItem="Nav-l8-2Br" secondAttribute="bottom" constant="236" id="RdF-SU-E38"/>
+                            <constraint firstItem="c2w-Wm-cTx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="180" id="VjD-zv-yL2"/>
+                            <constraint firstItem="Nav-l8-2Br" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Zuj-IU-Xxr"/>
+                            <constraint firstItem="c2w-Wm-cTx" firstAttribute="top" secondItem="rxc-95-nTE" secondAttribute="bottom" constant="76" id="b30-6M-IR8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VjD-zv-yL2"/>
+                                <exclude reference="b30-6M-IR8"/>
+                                <exclude reference="Zuj-IU-Xxr"/>
+                                <exclude reference="RdF-SU-E38"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="VjD-zv-yL2"/>
+                                <include reference="b30-6M-IR8"/>
+                                <include reference="Zuj-IU-Xxr"/>
+                                <include reference="RdF-SU-E38"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="c2w-Wm-cTx" id="jT0-cA-IBd"/>
+                        <outlet property="button" destination="Nav-l8-2Br" id="3pO-7C-OIJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.875" y="453.16901408450695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ball" width="32" height="32"/>
+        <image name="Button" width="150" height="46"/>
+        <image name="ButtonSelected" width="150" height="46"/>
+    </resources>
+</document>

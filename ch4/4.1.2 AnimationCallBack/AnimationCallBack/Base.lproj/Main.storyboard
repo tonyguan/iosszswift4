@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AnimationCallBack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgN-0k-sb7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ScJ-LG-vLv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" image="Ball" translatesAutoresizingMaskIntoConstraints="NO" id="c2w-Wm-cTx">
+                                <rect key="frame" x="140" y="92" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="UbD-gz-uRD"/>
+                                    <constraint firstAttribute="height" constant="42" id="wOk-kB-mSU"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UbD-gz-uRD"/>
+                                        <exclude reference="wOk-kB-mSU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="UbD-gz-uRD"/>
+                                        <include reference="wOk-kB-mSU"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nav-l8-2Br">
+                                <rect key="frame" x="95" y="422" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cRD-W7-TQB"/>
+                                    <constraint firstAttribute="width" constant="130" id="ppe-44-VaB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="ButtonSelected"/>
+                                <state key="highlighted" image="ButtonSelected"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cRD-W7-TQB"/>
+                                        <exclude reference="ppe-44-VaB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cRD-W7-TQB"/>
+                                        <include reference="ppe-44-VaB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bAa-7p-Jav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c2w-Wm-cTx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="180" id="OKB-R5-kbN"/>
+                            <constraint firstItem="c2w-Wm-cTx" firstAttribute="top" secondItem="fgN-0k-sb7" secondAttribute="bottom" constant="66" id="P7l-Yd-d4L"/>
+                            <constraint firstItem="Nav-l8-2Br" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iqH-ps-LB6"/>
+                            <constraint firstItem="ScJ-LG-vLv" firstAttribute="top" secondItem="Nav-l8-2Br" secondAttribute="bottom" constant="334" id="tGn-Ms-kFs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OKB-R5-kbN"/>
+                                <exclude reference="P7l-Yd-d4L"/>
+                                <exclude reference="iqH-ps-LB6"/>
+                                <exclude reference="tGn-Ms-kFs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OKB-R5-kbN"/>
+                                <include reference="P7l-Yd-d4L"/>
+                                <include reference="iqH-ps-LB6"/>
+                                <include reference="tGn-Ms-kFs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="c2w-Wm-cTx" id="b8I-Sg-xmS"/>
+                        <outlet property="button" destination="Nav-l8-2Br" id="fMd-Mr-NYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.875" y="453.16901408450701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ball" width="32" height="32"/>
+        <image name="Button" width="150" height="46"/>
+        <image name="ButtonSelected" width="150" height="46"/>
+    </resources>
+</document>
